@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transformaciones rotación</title>
+  <style>
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    width: 100%;
+    
+}
+
+.container:hover .cuadrado {
+    /* transform: skew(45deg); */
+    transform: skew(45deg);
+    transform: skew(10deg, 10deg);
+}
+
+
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background: #7fc900;
+    margin: 20px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado">
+          Translate 
+        </div>
+    </div>
+</body>
+</html>

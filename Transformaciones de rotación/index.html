@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transformaciones rotación</title>
+  <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial;
+      }
+
+    .container {
+        display: flex;
+        border: 1px solid red;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .container:hover .cuadrado{
+        transform: rotate(-45deg);
+      }
+    
+    .container:hover .b{
+        transform: rotateX(-90deg);
+    }
+
+    .container:hover .c{
+        transform: rotateY(-90deg);
+    }
+
+    .container:hover .d{
+        transform: rotateX(-90deg);
+    }
+
+    .container:hover .e{
+        transform: rotateZ(45deg);
+    }
+
+    .container:hover .f{
+        transform: rotateX(-90deg) rotateY(-90deg) rotateZ(-90deg);
+    }
+
+    .container:hover .g{
+        transform: rotate3d(1, 1, 0, -90deg);
+    }
+
+    .cuadrado {
+        width: 100px;
+        height: 100px;
+        background: #7fc900;
+        margin: 20px;
+        transition: .3s;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado">
+        Hola mundo!
+        </div>
+        <div class="cuadrado b">
+            Hola mundo! B
+        </div>
+        <div class="cuadrado c">
+            Hola mundo! C
+        </div>
+        <div class="cuadrado d">
+            Hola mundo! D
+        </div>
+        <div class="cuadrado e">
+            Hola mundo! E
+        </div>
+        <div class="cuadrado f">
+            Hola mundo! F
+        </div>
+        <div class="cuadrado g">
+            Hola mundo! G
+        </div>
+    </div>
+</body>
+</html>

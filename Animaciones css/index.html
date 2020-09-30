@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transformacion punto de origen</title>
+  <style>
+    body {
+      height: 100vh;
+      color: white;
+      font-family: Arial;
+    }
+    .container {
+      border: 1px solid red;
+    }
+    /*.cuadrado:hover {*/
+    .container:hover .cuadrado {
+      animation-play-state: paused;
+    }
+
+    .container:hover .cuadrado-left-right {
+      animation-play-state: paused;
+    }
+    
+    .cuadrado {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+      background: #7dc900;
+      margin: 20px;
+      animation-name: cuadrado;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+    }
+
+    .cuadrado-left-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+      background: #7dc900;
+      margin: 20px;
+      border-radius: 50%;
+      animation-name: cuadrado-left-right;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      position: relative;
+      animation-direction: alternate;  /* Alterna */
+      /* animation-timing-function: linear; */
+      /* animation-timing-function: steps(50); */
+    }
+
+    @keyframes cuadrado {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes cuadrado-left-right {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: calc(100% - 240px);
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cuadrado">
+      Hola mundo!
+    </div>
+  </div>
+  <div class="container">
+    <div class="cuadrado-left-right">
+        Hola mundo!
+    </div>
+  </div>
+</body>
+</html>

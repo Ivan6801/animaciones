@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transformaciones rotación</title>
+  <style>
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    width: 100%;
+    
+}
+
+.container:hover .cuadrado {
+    /* transform: scale(x, y); */
+    /* transform: scale(0 = 0% del tamaño - 1 = 100% del tamaño); */
+    transform: scale(2);
+    /* transform: scale(.5); */
+    /* transform: scale(2, .5); */
+}
+
+.container:hover .b{
+    transform: scale(.5);
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background: #7fc900;
+    margin-right: 100px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado">
+          Translate 
+        </div>
+        <div class="cuadrado b">
+            Translate 
+        </div>
+    </div>
+</body>
+</html>

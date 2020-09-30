@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transformaciones rotación</title>
+  <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial;
+      }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+        width: 100%;
+      }
+
+    .container:hover .a {
+        transform: translate(100px);
+    }
+
+    .container:hover .b {
+        transform: translate(100px, 100px);
+    }
+
+    .container:hover .c {
+        transform: translateY(-100px);
+    }
+
+    .container:hover .d {
+        transform: translateZ(-100px);
+    }
+
+    .container:hover .e {
+        transform: translate3d(-100px, -100px, 100px);
+    }
+
+
+    .cuadrado {
+        width: 200px;
+        height: 200px;
+        background: #7fc900;
+        margin: 20px;
+        transition: .3s;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado a">
+          Translate 
+        </div>
+        <div class="cuadrado b">
+          Translate XY
+        </div>
+        <div class="cuadrado c">
+          Translate Y
+        </div>
+        <div class="cuadrado d">
+          Translate Z
+        </div>
+        <div class="cuadrado e">
+          Translate 3D
+        </div>
+    </div>
+</body>
+</html>
